@@ -13,7 +13,7 @@ var mapTimeout = setTimeout(function() {
 function initMap(){
 map = new google.maps.Map(document.getElementById('map'),{
  center:{lat : 19.125362, lng: 72.999199 },
- zoom: 11
+ zoom: 10
 
 });
 //load all markers at the start
@@ -217,7 +217,7 @@ var viewModel=function(){
 var self = this;
 
  self.locationList = ko.observableArray([]);
- markers.forEach(function(location) {
+ locations.forEach(function(location) {
       self.locationList.push(new  newLocations(location));
   });
 
